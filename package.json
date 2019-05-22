@@ -18,6 +18,7 @@
   "devDependencies": {
     "@femessage/el-form-renderer": "^1.5.5",
     "axios": "^0.18.0",
+    "element-ui": "^2.8.2",
     "el-data-table": "^1.4.0",
     "husky": "^1.0.0-rc.13",
     "lint-staged": "^7.2.0",
