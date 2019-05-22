@@ -1,0 +1,40 @@
+{
+  "name": "dashboard-demo",
+  "description": "My first-rate project",
+  "version": "0.0.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "evillt/dashboard-demo"
+  },
+  "author": "evillt <ijoec123@gmail.com> (https://evila.me)",
+  "main": "index.js",
+  "scripts": {
+    "serve": "poi --serve",
+    "build": "poi --prod",
+    "now-build": "npm run build"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@femessage/el-form-renderer": "^1.5.5",
+    "axios": "^0.18.0",
+    "el-data-table": "^1.4.0",
+    "husky": "^1.0.0-rc.13",
+    "lint-staged": "^7.2.0",
+    "poi": "^12.6.8",
+    "prettier": "^1.17.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "linters": {
+      "*.{js,json,md}": [
+        "prettier --write",
+        "git add"
+      ]
+    }
+  }
+}
